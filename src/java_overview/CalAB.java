@@ -1,4 +1,4 @@
-package ss3_java_overview;
+package java_overview;
 
 import java.util.Scanner;
 
