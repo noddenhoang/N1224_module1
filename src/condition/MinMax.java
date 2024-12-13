@@ -1,8 +1,6 @@
 package condition;
 
-import java.util.Scanner;
-
-public class Main2 {
+public class MinMax {
     public static void main(String[] args) {
         int a = 10;
         int b = 9;
