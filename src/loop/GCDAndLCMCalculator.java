@@ -11,10 +11,10 @@ public class GCDAndLCMCalculator {
         System.out.print("Nhập số nguyên dương b: ");
         int b = sc.nextInt();
 
-        int uscln = 1;
+        int gcd = 1;
         for (int i = a; i >= 1; i--) {
             if (a % i == 0 && b % i == 0) {
-                uscln = i;
+                gcd = i;
                 break;
             }
         }
@@ -27,7 +27,7 @@ public class GCDAndLCMCalculator {
             }
         }
 
-        System.out.println("Ước số chung lớn nhất của " + a + " và " + b + " là: " + uscln);
+        System.out.println("Ước số chung lớn nhất của " + a + " và " + b + " là: " + gcd);
         System.out.println("Bội số chung nhỏ nhất của " + a + " và " + b + " là: " + lcm);
 
         sc.close();
