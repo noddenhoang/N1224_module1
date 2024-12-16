@@ -2,11 +2,11 @@ package loop;
 
 import java.util.Scanner;
 
-public class Bai6 {
+public class AlternatingSequencePrinter {
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
-//        System.out.print("Nhap n : ");
-        int n = 20;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap n : ");
+        int n = sc.nextInt();
         int count = 0;
         int distance = 1;
         for (int i = 2; i <= n; i += 2) {
