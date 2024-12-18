@@ -23,7 +23,7 @@ public class CheckPositiveInteger {
         if (n < 2) {
             isPrime = false;
         }
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 isPrime = false;
                 break;
@@ -31,7 +31,7 @@ public class CheckPositiveInteger {
         }
         //Ktr số tăng dần
         for (int i = 0; i <= s.length() - 2; i++) {
-            if (s.charAt(i) > s.charAt(i + 1)) {
+            if (s.charAt(i) >= s.charAt(i + 1)) {
                 isIncreasing = false;
                 break;
             }
