@@ -33,12 +33,12 @@ public class EmployeeInformation2 {
         Scanner sc = new Scanner(System.in);
         int n;
         do {
-            System.out.println("Nhập n (n <=5): ");
+            System.out.print("Nhập n (n <=5): ");
             n = sc.nextInt();
-            if (n > 5) {
+            if (n > 5 || n < 1) {
                 System.out.println("Vui lòng nhập lại n <= 5");
             }
-        } while (n > 5);
+        } while (n > 5 || n < 1);
 
         switch (n) {
             case 1:
@@ -84,8 +84,6 @@ public class EmployeeInformation2 {
                 outputEmployeeInformation3();
                 outputEmployeeInformation4();
                 outputEmployeeInformation5();
-                break;
-            default:
         }
     }
 
@@ -233,5 +231,4 @@ public class EmployeeInformation2 {
         System.out.println("Lương cơ bản: " + salary5);
         System.out.println("Điểm trung bình tốt nghiệp: " + avgScore5);
     }
-
 }

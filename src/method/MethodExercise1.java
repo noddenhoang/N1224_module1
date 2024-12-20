@@ -25,10 +25,11 @@ public class MethodExercise1 {
     }
 
     public static char toLowerCase(char upperCase) {
-        if (upperCase >= 'A' && upperCase <= 'Z') {
-            upperCase += 32;
-        }
-        return upperCase;
+//        if (upperCase >= 'A' && upperCase <= 'Z') {
+//            upperCase += 32;
+//        }
+//        return upperCase;
+        return (char) (upperCase >= 'A' && upperCase <= 'Z' ? upperCase + 32 : upperCase);
     }
 
     public static void levelOne(double a, double b) {
@@ -67,9 +68,8 @@ public class MethodExercise1 {
     }
 
     public static double min(double a, double b, double c, double d) {
-        a = a < b ? a : b;
-        c = a < c ? a : c;
-        d = a < d ? a : d;
-        return d;
+        double min = Math.min(a, b);
+        min = Math.min(min, c);
+        return min = Math.min(min, d);
     }
 }
